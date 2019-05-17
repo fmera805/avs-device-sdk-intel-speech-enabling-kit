@@ -1,0 +1,28 @@
+ {
+    "authDelegate":{
+        "clientSecret":"a3b59a3dd677b01e68e9f7fea283eb59957d570fc61bcc118256e0a115039c2b",
+        "deviceSerialNumber":"123456789",
+        "refreshToken":"",
+        "clientId":"amzn1.application-oa2-client.2431b7b633cc43e0aa2e385e3ab01b76",
+        "productId":"IntelSpeechAlexa"
+     },
+
+   "alertsCapabilityAgent":{
+        "databaseFilePath":"/home/pi/avs-device-sdk-intel-speech-enabling-kit/sdk-folder/application-necessities/alerts.db",
+        "alarmSoundFilePath":"/home/pi/avs-device-sdk-intel-speech-enabling-kit/sdk-folder/application-necessities/sound-files/med_system_alerts_melodic_01._TTH_.mp3",
+        "alarmShortSoundFilePath":"/home/pi/avs-device-sdk-intel-speech-enabling-kit/sdk-folder/application-necessities/sound-files/med_system_alerts_melodic_01_short._TTH_.wav",
+        "timerSoundFilePath":"/home/pi/avs-device-sdk-intel-speech-enabling-kit/sdk-folder/application-necessities/sound-files/med_system_alerts_melodic_02._TTH_.mp3",
+        "timerShortSoundFilePath":"/home/pi/avs-device-sdk-intel-speech-enabling-kit/sdk-folder/application-necessities/sound-files/med_system_alerts_melodic_02_short._TTH_.wav"
+   },
+
+   "settings":{
+        "databaseFilePath":"/home/pi/avs-device-sdk-intel-speech-enabling-kit/sdk-folder/application-necessities/settings.db",
+        "defaultAVSClientSettings":{
+            "locale":"en-US"
+          }
+    },
+
+   "certifiedSender":{ 
+        "databaseFilePath":"/home/pi/avs-device-sdk-intel-speech-enabling-kit/sdk-folder/application-necessities/certifiedSender.db"
+    }
+ }

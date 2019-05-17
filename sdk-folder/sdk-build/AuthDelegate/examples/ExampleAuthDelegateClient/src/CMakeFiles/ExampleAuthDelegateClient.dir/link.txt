@@ -1,0 +1,1 @@
+/usr/bin/c++   -DNDEBUG -Wall -O2 -DRAPIDJSON_HAS_STDSTRING   CMakeFiles/ExampleAuthDelegateClient.dir/ExampleAuthDelegateClient.cpp.o  -o ExampleAuthDelegateClient -Wl,-rpath,/home/pi/sdk-folder/sdk-build/AuthDelegate/src:/home/pi/sdk-folder/sdk-build/AVSCommon -rdynamic ../../../src/libAuthDelegate.so ../../../../AVSCommon/libAVSCommon.so -lcurl -lpthread 

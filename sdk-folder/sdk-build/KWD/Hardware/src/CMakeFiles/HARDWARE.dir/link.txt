@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -DNDEBUG -Wall -O2 -DRAPIDJSON_HAS_STDSTRING  -shared -Wl,-soname,libHARDWARE.so -o libHARDWARE.so CMakeFiles/HARDWARE.dir/HardwareKeywordDetector.cpp.o CMakeFiles/HARDWARE.dir/KeywordDetection.cpp.o -Wl,-rpath,/home/pi/sdk-folder/sdk-build/KWD/src:/home/pi/sdk-folder/sdk-build/AVSCommon: ../../src/libKWD.so ../../../AVSCommon/libAVSCommon.so -lpthread -lcurl 

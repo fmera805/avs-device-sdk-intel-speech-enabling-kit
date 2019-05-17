@@ -1,5 +1,5 @@
 CLIENT_SECRET=""
 #NOTE: The Device Serial Number can be any unique number
-DEVICE_SERIAL_NUMBER="123456"
+DEVICE_SERIAL_NUMBER="123456789"
 CLIENT_ID=""
 PRODUCT_ID=""

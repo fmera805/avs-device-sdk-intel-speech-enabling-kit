@@ -11,4 +11,4 @@ target_include_directories(AuthDelegate PRIVATE
 target_link_libraries(AuthDelegate AVSCommon ${CURL_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
 
 # install target
-asdk_install()
+sdk_install()

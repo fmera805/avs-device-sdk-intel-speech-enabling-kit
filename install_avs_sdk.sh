@@ -88,12 +88,14 @@ function usage() {
 }
 
 # Important directories and files
-sdk_folder="$HOME/sdk-folder"
+#sdk_folder="$HOME/sdk-folder"
+sdk_folder="$HOME/avs-device-sdk-intel-speech-enabling-kit/sdk-folder"
 sdk_source="$sdk_folder/sdk-source"
 sdk_build="$sdk_folder/sdk-build"
 
 third_party="$sdk_folder/third-party"
-git_repo="$sdk_source/avs-device-sdk"
+#git_repo="$sdk_source/avs-device-sdk"
+git_repo="$HOME/avs-device-sdk-intel-speech-enabling-kit"
 
 # Driver file directories
 driver_repo="$sdk_folder/driver-repo"
@@ -106,7 +108,8 @@ portaudio_include="$portaudio/include/"
 app_necessities="$sdk_folder/application-necessities"
 sound_files="$app_necessities/sound-files"
 
-startsample_script="$sdk_folder/startsample.sh"
+#startsample_script="$sdk_folder/startsample.sh"
+startsample_script="$sdk_build/startsample.sh"
 
 # Asound config file
 ASOUND_CONFIG_FILE="$git_repo/asound.conf"
@@ -126,9 +129,10 @@ SDK_SQLITE_SETTINGS_DATABASE_FILE_PATH="$app_necessities/settings.db"
 SDK_CERTIFIED_SENDER_DATABASE_FILE_PATH="$app_necessities/certifiedSender.db"
 SDK_NOTIFICATIONS_DATABASE_FILE_PATH="$app_necessities/notifications.db"
 
+#config_template="$git_repo/Integration/$CONFIG_JSON"
 config_template="$git_repo/Integration/$CONFIG_JSON"
-config_template_no_scratch="$sdk_build/Integration/$CONFIG_JSON_NO_SCRATCH"
-config_dest="$sdk_build/Integration/$CONFIG_JSON"
+config_template_no_scratch="$sdk_folder/Integration/$CONFIG_JSON_NO_SCRATCH"
+config_dest="$sdk_folder/Integration/$CONFIG_JSON"
 
 
 # Get the account specific information from the user
@@ -594,7 +598,7 @@ else
         $git_repo
 fi
 check_error "CMake failed for building C++ SDK"
-make SampleApp -j2
+make SampleApp
 check_error "Failed to compile C++ SDK"
 
 popd
